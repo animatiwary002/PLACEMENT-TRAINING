@@ -1,0 +1,129 @@
+create table login
+(emailid varchar2(40));
+ 
+insert into login values('88amitkumarchauhan88@gmail.com');
+
+insert into login values('abhinaya9779@gmail.com');
+
+insert into login values('abhishekmn55@gmail.com');
+
+insert into login values('ajayjain9832@gmail.com');
+
+insert into login values('akshayshenoy21n1997@gmail.com');
+
+insert into login values('ammu96yadav@gmail.com');
+
+insert into login values('angomarjundas1994@gmail.com');
+
+insert into login values('animatiwari002@gmail.com');
+
+insert into login values('arpitherappa@gmail.com');
+
+insert into login values('avaniparekh98@gmail.com');
+
+insert into login values('bharatrp1996@gmail.com');
+
+insert into login values('chilmathurbindu@gmail.com');
+
+insert into login values('kbsssit@gmail.com');
+
+insert into login values('sameerasimha.96@gmail.com');
+
+insert into login values('shreyasbenak@gmail.com');
+
+insert into login values('smithakv10@gmail.com');
+
+
+
+create table studentinfo
+(name varchar2(40),
+usn varchar2(40),
+email varchar2(40),
+phno number(15),
+mname varchar2(40),
+fname varchar2(40),
+dob date,
+blood varchar2(10),
+tadd varchar2(100),
+padd varchar2(100),
+xrollno number(20),
+xpercent number(10),
+xboard varchar2(40),
+xyear number(4),
+xiirollno number(20),
+xiipercent number(10),
+xiiboard varchar2(40),
+xiiyear number(4),
+berollno number(20),
+bepercent number(10),
+beboard varchar2(40),
+beyear number(4));
+
+
+
+create table company
+(companyid varchar2(10),
+comingdate varchar2(20),
+criteria varchar2(40),
+companyname varchar2(40));
+
+
+insert into company values('1111','08JUN2017','Above65percent','TCS');
+
+insert into company values('2222','23JUN2017','Above75percent','IBM');
+
+insert into company values('3333','15AUG2017','Above85percent','LandT');
+
+
+create table statistics
+(companyid varchar2(10),
+nostudents varchar2(5),
+cyear varchar2(4));
+
+
+insert into statistics values('1111','50','2014');
+
+insert into statistics values('1111','75','2015');
+'
+insert into statistics values('1111','100','2016');
+
+insert into statistics values('1111','125','2017');
+
+insert into statistics values('2222','78','2014');
+
+insert into statistics values('2222','45','2015');
+
+insert into statistics values('2222','70','2016');
+
+insert into statistics values('2222','56','2017');
+
+insert into statistics values('3333','98','2016');
+
+insert into statistics values('3333','42','2017');
+
+
+
+create table trainer
+(tid varchar2(10),
+tname varchar2(40),
+temailid varchar2(40),
+tphno varchar2(15),
+subject varchar2(40),
+tdate varchar2(20),
+fee varchar2(10));
+
+insert into trainer values(1234,'DR Prakash M N','prakash@gmail.com',9874561235,'Soft skill development','08-JUN-2017',300);
+insert into trainer values(4562,'DR Ramesh K N','rummy@gmail.com',9811241235,'Verbal','23-JUN-2017',200);
+insert into trainer values(7734,'DR Kumar','kumar@gmail.com',7845561235,'Aptitude','15-NOV-2017',500);
+
+create table dept
+(did number(10),
+nostudents number(10));
+
+insert into dept values(1,25);
+insert into dept values(2,42);
+insert into dept values(3,12);
+insert into dept values(4,78);
+ insert into dept values(5,35);
+
+

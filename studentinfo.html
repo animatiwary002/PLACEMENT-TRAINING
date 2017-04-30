@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Student Information</title>
+<script type="text/jscript" src="student.js">
+</script>
+<style type="text/css">
+body {
+	background-color: #CCF;
+}
+</style>
+</head>
+<body>
+<table width="1350" height="500" border="1">
+ <form id="studentform" name="studentform" method=Post action=http://localhost:8080/examples/placement/ onsubmit="javascript:check();">
+  <tr height="10">
+    <td height="30" colspan="2"><h2 align="center">SRI   SIDDHARTHA  INSTITUTE  OF  TECHNOLOGY  MARALUR TUMKUR-572105</h2></td>
+  </tr>
+  <tr>
+    <td height="85" colspan="2">
+    <table width="1350" height="85" border="0">
+      <tr>
+        <td width="131"><img src="220px-Sri_Siddhartha_Institute_of_Technology_SSIT_Tumkur_Logo.png" width="150" height="85" alt="logo" /></td>
+        <td width="1200">
+        <div align="center">
+          <font size="50">Placement Office Automation</font> 
+        </div></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td width="85" height="401" align="left" valign="top"><p><a href="index.html">Home</a></p>
+    <p><a href="companies.jsp">Companies</a></p>
+    <p><a href="statistics.jsp">Stastics</a></p>
+    <p><a href="training.jsp">Training</a></p>
+    <p><a href="#">About</a></p>
+    <p><a href="contact.html">Contact Us</a></p></td>
+    <td width="1235">
+    <table width="1270" height="394" border="0">
+    <tr>      
+        <td colspan="3"><h3>Personal Details:</h3>
+   <label>
+   <p>Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtname" id="txtname" />   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>USN :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="text" name="txtusn" id="txtusn" /><br />
+     <label>Email :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtemail" id="txtemail" />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Ph No :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="text" name="txtphno" id="txtphno" /><br />
+     <label>Mother Name :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="txtmname" id="txtmname" />   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Father Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="text" name="txtfname" id="txtfname" /><br />
+         <label>DOB :</label>     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="txtdob" id="txtdob" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Blood Group :</label>     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <label for="txtblood"></label>
+     <select name="txtblood" id="txtblood">
+	   <option>O+</option>
+	   <option>O-</option>
+       <option>A+</option>
+       <option>A-</option>
+       <option>B+</option>
+       <option>B-</option>
+       <option>AB+</option>
+       <option>AB-</option>
+     </select><br />
+ <label >Temporary Address :</label><textarea name="txttadd" id="txttadd" cols="15" rows="3"></textarea>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Permanent Address :</label>&nbsp;
+     <textarea name="txtpadd" id="txtpadd" cols="15" rows="3"></textarea>
+   </p>
+ </td>
+</tr> 
+ <tr>
+ <td width="423" height="193"><h3>Academic Details:</h3>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+            <label><strong><u>X class details:</u></strong></label>
+          <p> &nbsp;&nbsp;&nbsp;&nbsp;            
+            <label for="xrollno">&nbsp;Rollno :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="txtxrollno" id="txtxrollno" align="middle" /><br />
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <label for="xpercent">Percentage/CGPA :&nbsp;</label>
+            <input type="text" name="txtxpercent" id="txtxpercent" /><br />            
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label for="txtboard">Board/Univercity :&nbsp;&nbsp;</label>
+            <input type="text" name="txtxboard" id="txtxboard" /><br />       
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="textfield"> Year of Passing :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="txtxyear" id="txtxyear" />
+                   <p>&nbsp;</p></td>
+        <td width="423" height="193"><br /><br />
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><strong><u>XII class/Diploma details:</u></strong></label>
+          </p>
+          
+          <p> &nbsp;&nbsp;&nbsp;&nbsp;            
+            <label for="txtxiirollno">&nbsp;Rollno :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="text" name="txtxiirollno" id="txtxiirollno" /><br />            
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label for="txtxiipercent">Percentage/CGPA :&nbsp; </label>
+            <input type="text" name="txtxiipercent" id="txtxiipercent" /><br />            
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <label for="txxiitboard">Board/Univercity :&nbsp;&nbsp;</label>
+            <input type="text" name="txtxiiboard" id="txtxiiboard" /><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="textfield"> Year of Passing :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="txtxiiyear" id="txtxiiyear" />          
+        </p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="SUBMIT" id="SUBMIT" value="Submit" onclick="check()" />
+            <input type="submit" name="CLEAR" id="CLEAR" value="Clear" />
+          </p></td>
+        <td width="423" height="193"><h2> </h2><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><strong><u>BE details:</u></strong></label><br />
+          <p> &nbsp;&nbsp;&nbsp;&nbsp;              
+              <label for="txtberollno">Rollno :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+              <input type="text" name="txtberollno" id="txtberollno" /><br />
+              <label for="txtbepercent">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Percentage/CGPA :&nbsp; </label>
+              <input type="text" name="txtbepercent" id="txtbepercent" /><br />
+              <label for="txtbeboard">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Board/Univercity :&nbsp;&nbsp;</label>
+              <input type="text" name="txtbeboard" id="txtbeboard" /><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="textfield">Year of Passing :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="txtbeyear" id="txtbeyear" />
+            </p>
+            <p>&nbsp;</p>
+          </td>
+
+</table>
+  </td>
+  </tr>
+  <tr>
+    <td height="20" colspan="3"><marquee scrollamount="3">TCS VISING ON 08 JUNE 2018</marquee></td>
+  </tr>
+  </form>
+</table>
+</body>
+</html>
